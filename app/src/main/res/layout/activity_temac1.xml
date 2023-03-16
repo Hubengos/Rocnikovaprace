@@ -7,15 +7,52 @@
     tools:context=".temac1">
 
     <Button
-        android:id="@+id/btnpotvrdit"
+        android:id="@+id/krat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="potvrdit"
+        android:text="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/deleno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.571" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -29,7 +66,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-
         <ImageView
             android:layout_width="82dp"
             android:layout_height="match_parent"
@@ -45,9 +81,10 @@
 
     <EditText
         android:id="@+id/cislo1"
-        android:layout_width="241dp"
-        android:layout_height="114dp"
+        android:layout_width="236dp"
+        android:layout_height="67dp"
         android:ems="10"
+        android:hint="Číslo 1"
         android:inputType="numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,25 +95,28 @@
 
     <EditText
         android:id="@+id/cislo2"
-        android:layout_width="241dp"
-        android:layout_height="114dp"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
         android:ems="10"
+        android:hint="Číslo 2"
         android:inputType="numberSigned"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353"
+        app:layout_constraintVertical_bias="0.302"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/vysledek"
-        android:layout_width="131dp"
-        android:layout_height="45dp"
+        android:layout_width="121dp"
+        android:layout_height="46dp"
         android:text="výsledek"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
         tools:ignore="MissingConstraints" />
