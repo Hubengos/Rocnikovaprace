@@ -3,20 +3,20 @@ package com.example.rocnikovaprace
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.widget.AppCompatEditText
-import com.google.android.material.textfield.TextInputEditText
+import kotlin.math.pow
 
-class temac1 : AppCompatActivity() {
-
-
+class kombinatorika : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_temac1)
-
+        setContentView(R.layout.activity_kombinatorika)
+        val kombinatorikaButton = findViewById<Button>(R.id.zpet)
+        kombinatorikaButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
         val editN = findViewById<EditText>(R.id.editTextN)
         val editK = findViewById<EditText>(R.id.editTextK)
         val buttonCombination= findViewById<Button>(R.id.buttonCombinations)
@@ -27,15 +27,17 @@ class temac1 : AppCompatActivity() {
         buttonCombination.setOnClickListener {
             val n = editN.text.toString().toInt()
             val k = editK.text.toString().toInt()
-            val result = combination(n, k)
-            textResult.text = "Kombinace: $result"
+            val resultBezOpakovani = combination(n, k)
+            val resultSOpakovanim = combinationRep(n, k)
+            textResult.text = "Kombinace bez opakování: $resultBezOpakovani s opakováním: $resultSOpakovanim"
         }
 
         buttonVariation.setOnClickListener {
             val n = editN.text.toString().toInt()
             val k = editK.text.toString().toInt()
-            val result = variation(n, k)
-            textResult.text = "Variace: $result"
+            val resultBezOpakovani = variation(n, k)
+            val resultSOpakovanim = variationRep(n, k)
+            textResult.text = "Variace bez opakování: $resultBezOpakovani s opakováním: $resultSOpakovanim"
         }
 
         buttonPermutation.setOnClickListener {
@@ -67,6 +69,14 @@ class temac1 : AppCompatActivity() {
         return factorial(n) / factorial(n - k)
     }
 
+    private fun combinationRep(n: Int, k: Int): Int {
+        return factorial(n + k - 1) / (factorial(k) * factorial(n - 1))
+    }
+    private fun variationRep(n: Int, k: Int): Int {
+        return n.toDouble().pow(k).toInt()
+    }
+
+
     private fun factorial(num: Int): Int {
         if (num == 0) {
             return 1
@@ -77,6 +87,8 @@ class temac1 : AppCompatActivity() {
         }
         return result
     }
+
+
 }
 
 

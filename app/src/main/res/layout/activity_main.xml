@@ -31,29 +31,6 @@
         app:layout_constraintVertical_bias="0.212" />
 
 
-    <Button
-        android:id="@+id/temac1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tema č.1"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podNadpisAplikace"
-        app:layout_constraintVertical_bias="0.056" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="324dp"
-        android:text="tema č.4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -66,33 +43,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-
+        <!-- obrazek zatim neni ready
         <ImageView
             android:layout_width="82dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_baseline_menu_24" />
+            -->
     </LinearLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/financniMatematika"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="tema č.2"
+        android:layout_marginTop="44dp"
+        android:text="Finanční matematika"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temac1" />
+        app:layout_constraintTop_toBottomOf="@+id/podNadpisAplikace" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/posloupnosti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        android:text="tema č.3"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        android:layout_marginTop="64dp"
+        android:text="Posloupnosti"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kombinatorikaTlacitko"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/kombinatorikaTlacitko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Kombinatorika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/financniMatematika" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

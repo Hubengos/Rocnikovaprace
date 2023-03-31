@@ -8,11 +8,22 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RocnikovaPrace"
         tools:targetApi="31">
+        <activity
+            android:name=".Posloupnosti"
+            android:exported="false" />
+        <activity
+            android:name=".kombinatorika"
+            android:exported="false" />
+        <activity
+            android:name=".financeSlozene"
+            android:exported="false" />
+        <activity
+            android:name=".financeJednoduche"
+            android:exported="false" />
         <activity
             android:name=".temac1"
             android:exported="false" />
@@ -25,6 +36,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".finance"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
