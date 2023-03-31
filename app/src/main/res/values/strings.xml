@@ -4,4 +4,5 @@
         Sesterskou disciplínou finanční matematiky je pojistná matematika, jež se zabývá oceňováním pojišťovacích služeb.</string>
     <string name="jednoducheuroceni">Jednoduché úročení je způsob úročení, kdy jsou úroky počítány pouze z investovaného kapitálu</string>
     <string name="slozeneuroceni">Složené úročení je takový způsob úročení, při kterém se úrok na konci každého úrokovacího období přičítá k již dosažené hodnotě kapitálu a spolu s ním se dále úročí.</string>
+    <string name="posloupnosti">Aritmetická posloupnost je druh matematické posloupnosti, kde je stálý rozdíl mezi sousedními členy. Tento rozdíl mezi libovolným členem kromě prvního a předcházejícím členem se obvykle značí d a nazývá diference.</string>
 </resources>

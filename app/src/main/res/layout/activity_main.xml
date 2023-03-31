@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="PROJDI"
         android:textSize="40sp"
+        android:fontFamily="@font/bebas_neue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aplikace pro výuku matematiky"
+        android:fontFamily="@font/bebas_neue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,29 +45,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-        <!-- obrazek zatim neni ready
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_baseline_menu_24" />
-            -->
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas_neue"
+            android:text="Hlavní stránka"
+            android:textColor="#6200ED"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/financniMatematika"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bebas_neue"
         android:text="Finanční matematika"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/podNadpisAplikace" />
 
     <Button
         android:id="@+id/posloupnosti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/bebas_neue"
         android:layout_marginTop="64dp"
+        android:textSize="30sp"
         android:text="Posloupnosti"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -75,10 +86,12 @@
 
     <Button
         android:id="@+id/kombinatorikaTlacitko"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
         android:layout_marginTop="64dp"
+        android:fontFamily="@font/bebas_neue"
         android:text="Kombinatorika"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/financniMatematika" />

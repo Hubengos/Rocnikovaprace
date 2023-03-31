@@ -38,8 +38,8 @@
 
     <Button
         android:id="@+id/vypocitatVysledek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="149dp"
+        android:layout_height="72dp"
         android:fontFamily="@font/bebas_neue"
         android:text="Vypočítej"
         android:textSize="20sp"
@@ -59,6 +59,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/slozeneuroceni"
         android:textSize="20sp"
+        android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -139,7 +140,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bebas_neue"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
             android:text="Zpět" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bebas_neue"
+            android:text="složené úročení"
+            android:textColor="#6200ED"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <TextView

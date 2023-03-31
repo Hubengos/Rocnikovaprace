@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RocnikovaPrace"
+        android:label="PROJDI!"
         tools:targetApi="31">
         <activity
             android:name=".Posloupnosti"
@@ -24,9 +25,7 @@
         <activity
             android:name=".financeJednoduche"
             android:exported="false" />
-        <activity
-            android:name=".temac1"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
